@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+  /* Yeh min-height set kr diy ab isse chota web hoga hi nhi */
+  perspective: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+}
+
+.card {
+  transform-style: preserve-3d;
+  border-radius: 30px;
+  min-height: 80vh;
+  width: 35rem;
+  padding: 0rem 5rem;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* IMAGES */
+
+
+.shoes {
+  min-height: 35vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+img {
+  width: 20rem;
+  transition: all 0.75s ease-out;
+  z-index: 2;
+  transition: all 0.75s ease-out;
+  margin-top: 1.5rem;
+
+
+  /* max-width: 100%;
+    /* height: auto; // or vice versa, depends on what you need */
+  */
+}
+
+.circle
+{
+  height: 15rem;
+  width: 15rem;
+  border-radius: 50%;
+  z-index: 1;
+  position: absolute;
+
+  background: linear-gradient(
+    to right,
+    rgba(245, 70, 66, 0.75),
+    rgba(8, 83, 156, 0.75)
+  );
+}
+
+/* TEXTS */
+
+h3{
+  font-weight: lighter;
+  font-size: 1.3rem;
+  padding-bottom: 1.5rem;
+  color: #343A40;
+  transition: all 0.75s ease-out;
+}
+h1{
+  font-size: 3rem;
+  padding-bottom: 2rem;
+  transition: all 0.75s ease-out;
+  z-index: -1;
+}
+
+
+
+/* Buttons */
+
+
+.sizes{
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0 30px;
+  transition: all 0.75s ease-out;
+}
+.sizes button{
+  padding: 0.5rem 2rem;
+  border-radius: 30px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2), 0px 0px 5px rgba(0, 0, 0, 0.2);
+  border: none;
+  font-weight: bolder;
+  color: #343A40;
+  background-color: white;
+  cursor: pointer;
+}
+
+button.active{
+  background-color: #0071e3;
+  color: white;
+}
+
+.Purchase{
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+  transition: all 0.75s ease-out;
+}
+
+.btn{
+  padding: 1rem 10.5rem;
+  border-radius: 30px;
+  background-color: #0071e3;
+  border: none;
+  color: white;
+  font-weight: bolder;
+  cursor: pointer;
+}
